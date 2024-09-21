@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quick Notes</h1>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle">Dark Mode</button>
+
+    <!-- Search Notes -->
+    <input type="text" id="search-input" placeholder="Search notes..." />
+
+    <!-- Note Input -->
+    <textarea id="note-input" placeholder="Write your note here..."></textarea>
+
+    <!-- Category Selector -->
+    <label for="category-select">Category:</label>
+    <select id="category-select">
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+      <option value="todo">To-Do</option>
+    </select>
+
+    <!-- Save Button -->
+    <button id="save-btn">Save Note</button>
+
+    <!-- Notes List -->
+    <div id="notes-list"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
